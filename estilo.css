@@ -1,0 +1,345 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.inicio-section {
+    background-image: url('wintery-sunburst.png');
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+    margin: 0;
+}
+header {
+    background-color: #0094da;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    text-decoration: solid;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #3badff, #49bed8); 
+    transform: scaleX(0); 
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    z-index: -1;
+}
+
+header:hover::before {
+    transform: scaleX(1); 
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+nav ul li:hover a {
+    color: #000000; 
+}
+
+.fondo {
+    background-image: url(''); 
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    user-select: none;
+}
+nav ul li:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a {
+    font-size: 19px;
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.proximos-eventos {
+    background-image: url(slanted-gradient.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Centramos verticalmente en la pantalla */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+.evento {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.evento:hover {
+    transform: scale(1.02); /* Efecto de escala al pasar el mouse */
+}
+
+.evento img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.evento h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333; /* Cambio de color del título */
+}
+
+.evento p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #666; /* Cambio de color del texto */
+}
+.imagen-modificada {
+    max-width: 50px;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.evento h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.info-evento p {
+    margin: 5px 0;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+h1{
+    font-size: 24px;
+    user-select: none;
+    text-align: center;
+}
+
+h2 {
+    
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cuk-logo {
+    width: 18%;
+    display: block;
+    margin: 0 auto;
+    user-select: none;
+    transition: transform 0.3s ease-in-out; 
+    
+}
+.cuk-logo:hover {
+    transform: scale(1.1);
+    
+}
+
+.pInicio{
+    text-align: center;
+    font-size: 25px;
+}
+.pEventos{
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+h2 span {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#Eventos {
+    text-align: center; 
+}
+.proximos-eventos {
+    margin-top: 0px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    padding: 0px;
+    margin: 0;
+}
+
+.evento {
+    border: 5px solid #0094da;
+    position: relative;
+    background-image: url('tu-imagen-de-fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+}
+.evento::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px); 
+    z-index: -1; 
+}
+.evento img {
+    max-width: 40px;
+    height: auto;
+
+}
+
+.evento h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.info-evento p {
+    margin: 5px 0;
+}
+.formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.columna-izquierda img {
+    max-width: 100%;
+    height: auto;
+}
+
+.columna-derecha {
+    margin-right: 150px;
+
+    flex: 1;
+    padding: 20px;
+}
+
+.columna-derecha h2 {
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}
+
+.campo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.campo label {
+    font-size: 16px; 
+    margin-bottom: 3px; 
+}
+.campo input[type="texto"],
+.campo input[type="email"],
+.campo input[type="fecha"],
+.campo select {
+    background-color: #e7e7e7;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+}
+.campo input[type="texto"]:focus,
+.campo input[type="email"]:focus,
+.campo input[type="fecha"]:focus,
+.campo select:focus {
+    outline: none; 
+    border-color: #55bdd4; 
+    background-color: #fff; 
+}
+button {
+    margin-left: 20px;
+    background-color: #49bed8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3badff;
+}
+
+footer {
+    margin-top: 254px;
+    user-select: none;
+    background-color: #0094da;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.columna-izquierda img {
+    margin-left: 150px;
+    max-width: 100%;
+    height: auto;
+    max-height: 680px; 
+    border: 2px solid #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+}
+.kata {
+    color: #49bed8;
+}
+hr {
+    border: 0; 
+    height: 5px; 
+    background-color: #0094da; 
+    margin: 20px 0; 
+}
+.mi-seccion {
+    user-select: none;
+    width: 1000px; 
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    margin: 20px auto; 
+}  
+.mi-seccion p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left; 
+    margin: 0; 
+}
+

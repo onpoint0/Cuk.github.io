@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confederación Uruguaya de Karate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="#afiliados">Afiliados</a></li>
+                <li><a href="#campeonatos">Campeonatos</a></li>
+                <li><a href="#seleccion">Selección</a></li>
+                <li><a href="#arbitros">Árbitros</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+
+        <section class="formulario">
+            <section class="columna-izquierda">
+                <img src="kata.jpg" alt="Imagen de Karate">
+            </section>
+            <section class="columna-derecha">
+                <h2 class="contactoText">
+                    <span>¡Únete a nuestra comunidad y <br>adéntrate en el apasionante <br>mundo de las artes marciales
+                    </span>
+                    <span class="kata"><br>KATA!</span>
+                </h2>
+                <form action="#" method="POST">
+                    <section class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="texto" id="nombre" name="nombre" required>
+                    </section>
+                    <section class="campo">
+                        <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                        <input type="fecha" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    </section>
+                    <section class="campo">
+                        <label for="sexo">Sexo:</label>
+                        <select id="sexo" name="sexo" class="campo-sexo" required>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+                    </section>
+                    <section class="campo">
+                        <label for="gmail">Gmail:</label>
+                        <input type="email" id="gmail" name="gmail" required>
+                    </section>
+                    <button type="submit">Registrarse</button>
+                </form>
+            </section>
+        </section>
+        <footer>
+            <p>&copy; 2023 - Confederación Uruguaya de Karate</p>
+        </footer>
+    </body>
+
+</html>
